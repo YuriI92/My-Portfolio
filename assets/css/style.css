@@ -15,7 +15,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* HEADER STYLE */
+/* HEADER STYLE START */
 header {
     padding: 4px 50px 15px 0;
     background-color: var(--secondary-color);
@@ -46,4 +46,22 @@ header nav ul li {
     color: var(--primary-color);
     border-bottom: 4px solid var(--primary-color);
 }
+/* HEADER STYLE END */
 
+/* HERO SECTION */
+.hero {
+    background-image: url("../images/Road-to-Blue-Mountain.jpg");
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.hero h2 {
+    padding: 7px 12px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size: 34px;
+    margin: 150px 80px 20px 0;
+}
