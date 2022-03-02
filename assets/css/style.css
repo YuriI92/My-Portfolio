@@ -48,7 +48,7 @@ header nav ul li {
 }
 /* HEADER STYLE END */
 
-/* HERO SECTION */
+/* HERO SECTION START */
 .hero {
     background-image: url("../images/Road-to-Blue-Mountain.jpg");
     background-size: cover;
@@ -64,4 +64,28 @@ header nav ul li {
     background-color: var(--primary-color);
     font-size: 34px;
     margin: 150px 80px 20px 0;
+}
+/* HERO SECTION END */
+
+.section-border {
+    display: inline-block;
+}
+
+.section-title {
+    padding: 0 15px 100px 0;
+    margin: 30px 20px 0 90px;
+    float: left;
+    color: #416586;
+    font-size: 50px;
+    border-right: 3px solid;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.intro p {
+    margin: 30px 30px 20px 0;
+    font-size: 17px;
+    line-height: 1.4;
 }
