@@ -49,6 +49,14 @@ header nav ul li {
 }
 /* HEADER STYLE END */
 
+/* FOOTER STYLE */
+footer {
+    padding: 10px 0;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: #DBE3EB;
+}
+
 /* HERO SECTION START */
 .hero {
     background-image: url("../images/Road-to-Blue-Mountain.jpg");
@@ -144,3 +152,5 @@ header nav ul li {
     min-width: 500px;
 }
 /* WORK SECTION END */
+
+/* CONTACT ME SECTION */
