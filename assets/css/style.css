@@ -2,6 +2,7 @@
     --primary-color: #95D9D7;
     --secondary-color: #494A57;
     --tertiary-color: #9091a0;
+    --section-color: #416586;
 }
 
 * {
@@ -25,6 +26,11 @@ header {
     justify-content: space-between;
 }
 
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
 header h1 {
     font-size: 55px;
     color: var(--secondary-color);
@@ -40,12 +46,17 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li {
+header nav li {
     padding: 5px 12px;
     margin: 5px;
     font-size: 1.55vw;
     color: var(--primary-color);
     border-bottom: 4px solid var(--primary-color);
+    text-decoration: none;
+}
+
+header nav a {
+    color: var(--primary-color);
 }
 /* HEADER STYLE END */
 
@@ -76,31 +87,42 @@ footer {
 }
 /* HERO SECTION END */
 
+main {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .section-border {
     display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-title {
+    flex: 0 0 20%;
+    text-align: right;
 }
 
 .section-title {
     margin: 30px 20px 0 90px;
-    float: left;
-    color: #416586;
+    color: var(--section-color);
     font-size: 50px;
 }
 
-.align-right {
-    text-align: right;
-}
-
 .title-border {
-    border-left: 4px solid #416586;
-    margin: 30px 50px 20px 250px;
+    border-left: 4px solid var(--section-color);
+    margin: 30px 50px 20px 0px;
+    padding-left: 30px;
     padding-bottom: 20px;
+    flex: 0 0 75%;
 }
 
 /* ABOUT ME SECTION */
 .intro p {
     padding-left: 30px;
-    margin: 30px 50px 20px 250px;
+    margin: 30px 50px 20px 0px;
     font-size: 17px;
     line-height: 1.4;
 }
@@ -112,7 +134,6 @@ footer {
 
 .work-samp-title {
     padding: 10px;
-    margin-left: 30px;
     background-color: var(--primary-color);
     font-size: 23px;
     position: absolute;
@@ -128,7 +149,6 @@ footer {
 
 .work-images {
     padding-top: 10px;
-    margin-left: 30px;
     max-width: 1050px;
 }
 
@@ -154,3 +174,23 @@ footer {
 /* WORK SECTION END */
 
 /* CONTACT ME SECTION */
+.contact-info {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+}
+
+.contact-info address a {
+    padding: 5px;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--section-color);
+    font-size: 20px;
+    border-bottom: 3px solid;
+    line-height: 1.8;
+}
