@@ -105,11 +105,11 @@ main {
 .flex-title {
     text-align: right;
     /* Flex display of the page */
-    flex: 0 0 20%;
+    flex: 0 0 19%;
 }
 
 .section-title {
-    margin: 30px 20px 0 90px;
+    margin: 30px 0 0 30px;
     color: var(--section-color);
     font-size: 50px;
 }
@@ -126,7 +126,7 @@ main {
 /* ABOUT ME SECTION */
 .intro p {
     padding-left: 30px;
-    margin: 30px 50px 20px 0px;
+    margin: 30px 52px 20px 0px;
     font-size: 17px;
     line-height: 1.4;
 }
@@ -156,7 +156,7 @@ main {
 }
 
 .work-images img {
-    width: 100%;
+    width: 65vw;
     height: 400px;
     object-fit: cover;
     object-position: 100% 80%;
@@ -172,12 +172,12 @@ main {
 
 #secondary-work img {
     height: 200px;
-    min-width: 620px;
+    width: 32vw;
     object-position: 100% 50%;
 }
 /* WORK SECTION END */
 
-/* CONTACT ME SECTION */
+/* CONTACT ME SECTION START */
 .contact-info {
     padding-top: 30px;
     padding-bottom: 60px;
@@ -187,7 +187,6 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 1000px;
 }
 
 .contact-info address a {
@@ -198,4 +197,57 @@ main {
     font-size: 20px;
     border-bottom: 3px solid;
     line-height: 1.8;
+}
+/* CONTACT ME SECTION END */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header h1 {
+        padding-left: 45px;
+    }
+
+    header nav ul li a {
+        font-size: 25px;
+    }
+    
+    .section-border {
+        display: block;
+    }
+
+    .section-title {
+        text-align: center;
+        border-bottom: 4px solid;
+    }
+
+    .title-border {
+        border-left: none;
+        margin: 30px 0;
+    }
+
+    .intro p {
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .work-images {
+        text-align: center;
+    }
+
+    .work-images img {
+        width: 98%;
+        height: 300px;
+    }
+
+    .work-samp-title {
+        transform: translate(6%, -140%);
+    }
+
+    #secondary-work img {
+        height: 200px;
+        width: 40vw;
+    }
+    
+    .contact-info {
+        padding: 10px 20px;
+    }
 }
