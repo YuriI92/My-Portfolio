@@ -95,14 +95,17 @@ main {
 
 .section-border {
     display: inline-block;
+    /* Flex display of the page */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+
 .flex-title {
-    flex: 0 0 20%;
     text-align: right;
+    /* Flex display of the page */
+    flex: 0 0 20%;
 }
 
 .section-title {
@@ -116,6 +119,7 @@ main {
     margin: 30px 50px 20px 0px;
     padding-left: 30px;
     padding-bottom: 20px;
+    /* flex display of the page */
     flex: 0 0 75%;
 }
 
@@ -149,7 +153,6 @@ main {
 
 .work-images {
     padding-top: 10px;
-    max-width: 1050px;
 }
 
 .work-images img {
@@ -161,15 +164,16 @@ main {
 }
 
 #all-secondary-works {
+    /* Flex display of the work images other than top */
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #secondary-work img {
-    width: 80%;
     height: 200px;
+    min-width: 620px;
     object-position: 100% 50%;
-    min-width: 500px;
 }
 /* WORK SECTION END */
 
@@ -178,6 +182,7 @@ main {
     padding-top: 30px;
     padding-bottom: 60px;
     margin-bottom: 50px;
+    /* flex display of the contents */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
