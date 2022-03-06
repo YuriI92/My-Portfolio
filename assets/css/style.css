@@ -206,7 +206,7 @@ main {
         padding-left: 45px;
     }
 
-    header nav ul li a {
+    header nav ul li {
         font-size: 25px;
     }
     
@@ -251,3 +251,22 @@ main {
         padding: 10px 20px;
     }
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 4px 0 8px 0;
+    }
+
+    header nav ul li {
+        font-size: 20px;
+        border-bottom: 3px solid;
+    }
+
+    #secondary-work img {
+        height: 200px;
+        width: 42vw;
+    }
+}
+
