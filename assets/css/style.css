@@ -88,7 +88,6 @@ footer {
 /* HERO SECTION END */
 
 main {
-    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -111,7 +110,7 @@ main {
 .section-title {
     margin: 30px 0 0 30px;
     color: var(--section-color);
-    font-size: 50px;
+    font-size: 42px;
 }
 
 .title-border {
@@ -156,7 +155,7 @@ main {
 }
 
 .work-images img {
-    width: 65vw;
+    width: 72vw;
     height: 400px;
     object-fit: cover;
     object-position: 100% 80%;
@@ -172,7 +171,7 @@ main {
 
 #secondary-work img {
     height: 200px;
-    width: 32vw;
+    width: 35vw;
     object-position: 100% 50%;
 }
 /* WORK SECTION END */
@@ -209,6 +208,10 @@ main {
     header nav ul li {
         font-size: 25px;
     }
+
+    main {
+        max-width: 90%;
+    }
     
     .section-border {
         display: block;
@@ -217,14 +220,18 @@ main {
     .section-title {
         text-align: center;
         border-bottom: 4px solid;
+        margin: 30px auto 0 auto;
+        width: 50%;
     }
 
     .title-border {
         border-left: none;
-        margin: 30px 0;
+        padding-left: 0;
+        margin: 30px auto 20px auto;
     }
 
     .intro p {
+        padding-left: 0;
         margin: 30px auto;
         text-align: center;
     }
@@ -234,17 +241,16 @@ main {
     }
 
     .work-images img {
-        width: 98%;
+        width: 90vw;
         height: 300px;
     }
 
     .work-samp-title {
-        transform: translate(6%, -140%);
+        transform: translate(0, -140%);
     }
 
     #secondary-work img {
-        height: 200px;
-        width: 40vw;
+        width: 44vw;
     }
     
     .contact-info {
@@ -252,11 +258,14 @@ main {
     }
 }
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-
     header {
         padding: 4px 0 8px 0;
+    }
+
+    header h1 {
+        font-size: 50px;
     }
 
     header nav ul li {
@@ -264,9 +273,51 @@ main {
         border-bottom: 3px solid;
     }
 
-    #secondary-work img {
-        height: 200px;
-        width: 42vw;
+    .section-title {
+        font-size: 43px;
     }
 }
 
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    header h1 {
+        font-size: 45px;
+    }
+
+    header nav ul li {
+        font-size: 18px;
+        padding: 5px 5px;
+        border-bottom: 2px solid;
+    }
+
+    .hero h2 {
+        padding: 5px 10px;
+        font-size: 28px;
+        margin: 140px 10px 20px 0;
+    }
+    
+    .section-title {
+        font-size: 38px;
+    }
+
+    .intro p {
+        font-size: 15px;
+    }
+
+    .work-images img {
+        height: 200px;
+    }
+
+    .work-samp-title {
+        font-size: 20px;
+    }
+
+    #secondary-work img {
+        width: 90vw;
+    }
+
+    .contact-info address a {
+        font-size: 18px;
+        line-height: 2.2;
+    }
+}
