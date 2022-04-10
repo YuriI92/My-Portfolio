@@ -170,7 +170,7 @@ main {
     width: 72vw;
     height: 400px;
     object-fit: cover;
-    object-position: 100% 80%;
+    object-position: 100% 0;
     border: 5px solid var(--primary-color);
 }
 
@@ -214,6 +214,14 @@ main {
     font-size: 20px;
     border-bottom: 3px solid;
     line-height: 1.8;
+}
+
+.contact-info address a:hover {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    border-bottom: none;
+    border-radius: 15px;
+    color: #104191;
 }
 /* CONTACT ME SECTION END */
 
