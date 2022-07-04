@@ -16,7 +16,7 @@ This portfolio of work samples are to show employers what kind of works I can do
 * CSS
 
 ## Website
-https://yurii92.github.io/My-Portfolio/
+https://yurii92.github.io/yuri-ichikawa-portfolio/
 ![alt text](./assets/images/myportfolio-screenshot_01.png)
 ![alt text](./assets/images/myportfolio-screenshot_02.png)
 
