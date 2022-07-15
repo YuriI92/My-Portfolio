@@ -135,6 +135,15 @@ main {
 }
 
 /* ABOUT ME SECTION */
+.intro-info {
+    display: flex;
+}
+
+.profile-pic {
+    width: 15%;
+    object-fit: contain;
+}
+
 .intro p {
     padding-left: 30px;
     margin: 30px 52px 20px 0px;
@@ -260,6 +269,11 @@ main {
         margin: 30px auto 20px auto;
     }
 
+    .intro-info {
+        display: block;
+        text-align: center;
+    }
+    
     .intro p {
         padding-left: 0;
         margin: 30px auto;
@@ -328,6 +342,10 @@ main {
     
     .section-title {
         font-size: 38px;
+    }
+
+    .profile-pic {
+        width: 45%;
     }
 
     .intro p {
